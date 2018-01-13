@@ -1,18 +1,7 @@
-import _ from 'lodash';
-import printMe from './print.js';
+import React from 'react';
+import ReactDOM from "react-dom";
 
-function component() {
-    let element = document.createElement('div');
-    let btn = document.createElement('button');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    btn.innerHTML = 'Click';
-    btn.onclick = printMe;
-
-    element.appendChild(btn);
-
-    return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(
+  <h2>Здесь может быть</h2>,
+  document.getElementById('fieldToShow')
+);
