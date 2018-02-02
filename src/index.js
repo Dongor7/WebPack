@@ -1,11 +1,7 @@
-import _ from 'lodash';
+import React from 'react';
+import ReactDOM from "react-dom";
 
-function component() {
-    let element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(
+  <h2>Здесь может быть</h2>,
+  document.getElementById('fieldToShow')
+);
